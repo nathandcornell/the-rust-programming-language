@@ -15,4 +15,19 @@ fn main() {
     println!("{} Days of Summer", DAYS_OF_SUMMER);
 
     // Shadowing
+    let x = 5;
+    let x = x + 1;
+    let x = x * 2;
+
+    println!("The value of 'x' is: {}", x);
+
+    let spaces = "  ";
+    let spaces = spaces.len();
+
+    let space_count = "  ".len();
+
+    println!("spaces = {}, and space_count = {}", spaces, space_count);
+
+    let mut spacey = "  ";
+    // spacey = spacey.len(); // Compiler error! "expected &str, found usize"
 }
